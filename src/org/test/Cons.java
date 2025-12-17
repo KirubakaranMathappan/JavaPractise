@@ -18,12 +18,11 @@ public class Cons {
 	
 	public static void main(String[] args) {
 		Cons c=new Cons();
+		c.b();   
 		c.a();
-		c.a();
-		c.a();
-		c.b();
-		c.b();
-		c.b();		
+		
+		
+
 	}
 
 }

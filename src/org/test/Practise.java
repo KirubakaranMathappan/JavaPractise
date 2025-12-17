@@ -200,8 +200,8 @@ public class Practise {
 		
 		Integer s7=128;
 		Integer s8=128;
-		System.out.println(s7==s8);  // false because integer range -127 to 128
-		System.out.println(s7.equals(s8));
+		System.out.println(s7==s8);  // false because integer range -127 to 128 
+		System.out.println(s7.equals(s8)); /// true, because checks values alone
 		System.out.println(s7*s8);
 		
 		
@@ -251,17 +251,7 @@ public class Practise {
 		int y1= ++x1 * 2 - x1-- ;
 		System.out.println(y1);
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 		
 		}
