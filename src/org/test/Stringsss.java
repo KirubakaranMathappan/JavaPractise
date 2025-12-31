@@ -9,7 +9,7 @@ public class Stringsss {
 	Scanner s=new Scanner(System.in);
 	System.out.println("Enter String Value");
 	String str = s.nextLine();
-	String[] split = str.split("\\s");
+	String[] split = str.split("[-_: ]"); // for multiple split use [ ]
 	for (String word:split) {
 		System.out.println(word);
 	}		
