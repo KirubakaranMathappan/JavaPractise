@@ -250,14 +250,41 @@ public class Practise {
 		int x1=5;
 		int y1= ++x1 * 2 - x1-- ;
 		System.out.println(y1);
+			
+		int [] arr= {13,10,21,20};
 		
-
+		for(int i=0;i<arr.length;i++) {		
+			System.out.print(arr[i]);
+			 if(arr[i]%2==0) {
+				 System.out.println("Even");				 
+			 }else {
+				 System.out.println("Odd");
+			 }	
+		}
+		
+		System.out.println();		
+		
+		List<Integer> li=new LinkedList<>();
+		li.add(13); li.add(20); li.add(21); li.add(10);
+		
+		for(int i=0;i<li.size();i++) {
+			System.out.print(li.get(i));
+			if(li.get(i)%2==0) {
+				System.out.println("Even");
+			}else {
+				System.out.println("Odd");
+			}
+		}
+		
+	
+		int [] n1= {12,21,34,43};
+			
+		
+		
 		
 		
 		}
-		
-		
-		
+
 	}
 
 	

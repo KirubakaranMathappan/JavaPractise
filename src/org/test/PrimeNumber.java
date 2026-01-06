@@ -22,8 +22,8 @@ public class PrimeNumber {
 	    
 		                 System.out.println();
 		                 
-			                int num = 28;
-			                boolean isPrime = true;
+			                int num = 17;
+			                boolean isPrime = true ;
 
 			                // Step 1: Handle edge cases
 			                if (num <= 1) {
@@ -40,7 +40,7 @@ public class PrimeNumber {
 			                }
 
 			                // Step 3: Print result
-			                if (isPrime) {
+			                if (isPrime==true) {
 			                    System.out.println(num + " is a Prime number");
 			                } else {
 			                    System.out.println(num + " is NOT a Prime number");
