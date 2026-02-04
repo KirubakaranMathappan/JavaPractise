@@ -1,9 +1,13 @@
 package org.test;
 
 import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class Practise {
@@ -44,8 +48,7 @@ public class Practise {
 		
 		System.out.println("length of String :" + name.length());
 		System.out.println("Sub Stirng :" + name.substring(1,4));
-		
-		
+				
 		String course="Java";
 		String course1="html";
 		String course2="phython";
@@ -278,12 +281,73 @@ public class Practise {
 		
 	
 		int [] n1= {12,21,34,43};
+		
+		int [] [] a2= {{10,102,12},{89,9,5}};
+		
+		
+		List<Object> list=new LinkedList<>();
+		
+		list.add("kiruba");
+		list.add(9566411792L);
+		list.add(90.887);
+		list.add(true);
+		list.add(35);
+		
+		List<Integer> inte=new LinkedList<>();
+		inte.add(90);
+		
+		
+		Object [] arr3= {"kiruba",987,90.008};
 			
+		Map<Integer,String> map=new LinkedHashMap<>();
+			
+		map.put(1, "kiruba");
+		map.put(2, "karan");
+		map.put(1, "kara"); // key is repeated, last added key and value is considerable
+		System.out.println(map);
 		
+		Map<Integer,String> map1=new TreeMap<>();
+		map1.put(2, "kis");   // key doesnot allow null
+		map1.put(1, "qsw");
+		System.out.println(map1);
 		
+		System.out.println("------Find the duplicate values of array----------");
 		
+		int [] q= {2,4,2,5,3,4};
 		
+		List<Integer> listq=new LinkedList<>();
+		for (int qq:q) {
+			listq.add(qq);
+			}
+		System.out.println(listq);	
+		
+		Set <Integer> setq=new LinkedHashSet<>();
+		Set <Integer>duplicate=new LinkedHashSet<>();
+		setq.addAll(listq);
+		System.out.println(setq);
+		for(int dupval:listq) {
+			if(!setq.add(dupval)) {
+				duplicate.add(dupval);
+			}	
 		}
+		System.out.println("Duplicate values : " +duplicate);
+			
+		int diff = (listq.size() - setq.size());
+		System.out.println("No.of Duplicate values : "+diff);
+		
+		String string1="java";
+		String string2="home";
+		System.out.println(string1.concat(string2));
+		System.out.println(string1);
+		StringBuffer sbuff=new StringBuffer("language");
+		System.out.println(string1+ sbuff);
+		System.out.println(sbuff);
+		sbuff.append(string1);
+		System.out.println(sbuff);
+		
+		
+		
+	}
 
 	}
 
