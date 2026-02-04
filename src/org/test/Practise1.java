@@ -46,9 +46,10 @@ public class Practise1 {
 				
 		for(int x:a) {
 			if(x%2==0) {
-				System.out.println(x +" "+" is EvenNumber");
+			    System.out.println(x +" "+" is EvenNumber");
+				//System.out.println(x);
 			}
-			else if(x%2!=0) {
+			if(x%2!=0) {
 				System.out.println(x+ " "+" is OddNumber");
 			}
 		}

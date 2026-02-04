@@ -1,5 +1,6 @@
 package org.test;
 
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 public class Stringsss {
@@ -9,7 +10,7 @@ public class Stringsss {
 	Scanner s=new Scanner(System.in);
 	System.out.println("Enter String Value");
 	String str = s.nextLine();
-	String[] split = str.split("[-_:., ]"); // for multiple split use [ ]
+	String[] split = str.split("[-_:;., ]"); // for multiple split use [ ]
 	for (String word:split) {
 		System.out.println(word);
 	}		
@@ -83,7 +84,6 @@ public class Stringsss {
 		}
 		
 		
-		
 		String str2="welcome";
 	
 		System.out.println("----------reverse string by stringbuilder---------");
@@ -112,7 +112,70 @@ public class Stringsss {
 			strrev=strrev+str2.charAt(i);
 		}
 		System.out.println(strrev);
+		System.out.println("---------Palindrome------------");
 	
+		String s3="Madam";
+		String revs3="";
+		for(int i=s3.length()-1;i>=0;i--) {
+			revs3=revs3+s3.charAt(i);
+		}
+
+		if(revs3.equalsIgnoreCase(s3)) {
+			System.out.println("Palindrom");
+		}else {
+			System.out.println("Not Palindrome");
+		}
+		
+		System.out.println("----- number swap---------");
+	
+		int b=10;
+		int c=20;
+		int d;
+		d=b;
+		b=c;
+		c=d;	
+		System.out.println(b+ " " +c);
+		
+		System.out.println("------without new variable number swap---------");
+		
+		int b1=20;
+		int c1=30;
+		b1=b1+c1;		//20+30=50;
+		c1=b1-c1;		//50-30=20; 
+		b1=b1-c1;		//50-20=30;
+		System.out.println(b1 +" "+ c1);
+		
+		System.out.println("-----------remove duplicate letters from given string----------");	
+		
+		String str4="Kirubakaran";
+		String[] arrsplit = str4.toLowerCase().split(""); // split by each letters
+
+		LinkedHashSet<String> lhs=new LinkedHashSet<>();
+				
+		for(String y:arrsplit) {
+			lhs.add(y);          // splitted letters added in set, set removes duplicate
+		}
+
+		System.out.println(lhs);
+		str4=String.join("", lhs);  // joining letters by using join method
+		System.out.println(str4);
+
+		/*   
+			Another approach
+			
+		LinkedHashSet<String> hs=new LinkedHashSet<>(Arrays.asList(arrsplit));
+		System.out.println(hs);
+		str4=String.join("", hs);
+		System.out.println(str4);
+		*/	
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 	
 }

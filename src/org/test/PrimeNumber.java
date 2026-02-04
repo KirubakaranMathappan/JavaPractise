@@ -5,7 +5,7 @@ public class PrimeNumber {
 			
 			        int n = 20;
 
-			        for (int i = 2; i <= n; i++) {
+			       for (int i = 2; i <= n; i++) {
 			            boolean isPrime = true;
 
 			            for (int j = 2; j <= Math.sqrt(i); j++) {
